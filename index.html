@@ -215,6 +215,417 @@
 
 
   
+    <article id="post-MapReduce" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="MapReduce"><a href="#MapReduce" class="headerlink" title="MapReduce"></a>MapReduce</h1><h2 id="MapReduce是一种分布式并行编程框架"><a href="#MapReduce是一种分布式并行编程框架" class="headerlink" title="MapReduce是一种分布式并行编程框架"></a>MapReduce是一种分布式并行编程框架</h2><p>采用分而治之的策略，把非常大的数据集切分成非常多的独立的小分片，然后为每一个分片单独地启动一个map任务，最终通过多个map任务，并行地在多个机器上处理。<br>MapReduce的理念：</p>
+<pre><code>* 计算向数据靠拢而不是数据向计算靠拢
+</code></pre>
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2018/10/22/MapReduce/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-MongoDB" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="MongoDB"><a href="#MongoDB" class="headerlink" title="MongoDB"></a>MongoDB</h1><p>简介：</p>
+<pre><code>* 由C++编写，是一个基于分布式文件存储的开源数据库系统
+* 在高负载的情况下，添加更多的节点，可以保证服务器性能
+* MongoDB旨在为WEB引用提供可扩展的高性能数据存储解决方案
+</code></pre><p>特点：</p>
+<pre><code>* 提供了一个面向文档存储操作起来比较简单和容易
+* 可以设置任何属性的索引实现更快的排序
+* 具有更好的水平可扩展性
+* 支持丰富的查询表达式 可查询文档中内嵌的对象及数组
+* 课替换已完成文档某个制定的数据字段
+* MongoDB中的MapReduce主要是用来对数据进行批量处理和聚合操作
+* 安装过程非常简单
+</code></pre>
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2018/10/19/MongoDB/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-NOSQL数据库" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="NOSQL数据库"><a href="#NOSQL数据库" class="headerlink" title="NOSQL数据库"></a>NOSQL数据库</h1><h2 id="特点"><a href="#特点" class="headerlink" title="特点"></a>特点</h2><pre><code>* 灵活的可扩展性
+* 灵活的数据模型
+* 和云计算的紧密结合
+</code></pre><hr>
+<p> 传统的关系数据库：</p>
+<pre><code>1. 优势：
+    * 非常完备的关系理论基础
+    * 具有事务性机制的支持
+    * 高效的查询优化机制
+2. 缺陷：
+    * 无法满足海量数据的管理需求
+    * 无法满足高并发的需求
+    * 无法满足高可扩展性和高可用性的需求
+</code></pre><p>MySQL集群方式的缺陷：</p>
+<pre><code>* 复杂性
+* 延迟性
+* 扩容问题
+</code></pre><hr>
+<p>NOSQL主要有4类：</p>
+<pre><code>1. 键值数据库：例如Redis 写入性能很好 适合做缓冲层数据库
+2. 列族数据库：HBase 分布式数据存储与管理 
+3. 文档数据库：MangoDB  （JSON数据格式）存储索引并管理面向文档的数据
+4. 图数据库：Neo4j 图结构 专门用于处理具有 高度相互关联关系的数据 比较适合社交网络 模式识别 依赖分析 推荐系统
+</code></pre><hr>
+<p>NOSQL 强调BASE  SQL强调ACID<br>NewSQL</p>
+<hr>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2018/10/19/NOSQL数据库/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-大数据" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="大数据"><a href="#大数据" class="headerlink" title="大数据"></a>大数据</h1><h2 id="Hadoop简介"><a href="#Hadoop简介" class="headerlink" title="Hadoop简介"></a>Hadoop简介</h2><h3 id="Hadoop的HDFS-，MapReduce都是来自Google的技术。"><a href="#Hadoop的HDFS-，MapReduce都是来自Google的技术。" class="headerlink" title="Hadoop的HDFS ，MapReduce都是来自Google的技术。"></a>Hadoop的HDFS ，MapReduce都是来自Google的技术。</h3><p>特性：   </p>
+<pre><code>* 高可靠 
+* 高效
+* 高扩展性
+</code></pre><h3 id="Hadoop1-0到2-0的变化；"><a href="#Hadoop1-0到2-0的变化；" class="headerlink" title="Hadoop1.0到2.0的变化；"></a>Hadoop1.0到2.0的变化；</h3><pre><code>* 由HDFS，MapReduce和YARN三个分支构成
+* HDFS：NN Federation、HA
+* MapReduce：运行在YARN上的MR
+</code></pre><h3 id="选择Hadoop版本的考虑因素："><a href="#选择Hadoop版本的考虑因素：" class="headerlink" title="选择Hadoop版本的考虑因素："></a>选择Hadoop版本的考虑因素：</h3><pre><code>* 是否由稳定版
+* 是否开源
+* 是否有实践检验
+* 是否有强大的社区支持
+</code></pre><h2 id="Hadoop项目结构"><a href="#Hadoop项目结构" class="headerlink" title="Hadoop项目结构"></a>Hadoop项目结构</h2><ul>
+<li>MapReduce :基于磁盘</li>
+<li>Spark :基于内存</li>
+<li>Hive :数据仓库 把语句转化为mapreduce作业</li>
+<li>Pig :一个基于hadoop的大规模数据分析平台 </li>
+<li>Ozzie :Hadoop上的工作管理系统</li>
+<li>Zookeeper: 分布式协调系统</li>
+<li>Hbase: hadoop上的非关系型的分布式数据库</li>
+<li>Flume: 日志收集分析框架</li>
+<li>Sqoop:数据导入导出 用于hadoop 和传统数据库的数据交换</li>
+<li>Ambarı : Hadoop快速部署工具</li>
+</ul>
+<h2 id="Hadoop集群的部署和使用"><a href="#Hadoop集群的部署和使用" class="headerlink" title="Hadoop集群的部署和使用"></a>Hadoop集群的部署和使用</h2><h3 id="Hadoop两大核心组件："><a href="#Hadoop两大核心组件：" class="headerlink" title="Hadoop两大核心组件："></a>Hadoop两大核心组件：</h3><p>（1） HDFS    （2）MapReduce</p>
+<pre><code>* HDFS               （1）NameNode     （2）DataNode
+* Mapreduce    （1）JobTracker.        (2) TaskTracker
+</code></pre><ul>
+<li>用TestDFSIO基准测试，来测试HDFS的IO性能</li>
+<li>用排序策四MapReduce：Hadoop自带的一个部分排序的程序，这个测试过程的整个数据集都会通过洗牌（shuffle）传输至Reducer，可以从分测试MapReduce的性能</li>
+</ul>
+<h2 id="分布式文件系统HDFS简介"><a href="#分布式文件系统HDFS简介" class="headerlink" title="分布式文件系统HDFS简介"></a>分布式文件系统HDFS简介</h2><p>（Hadoop Distributed File System）</p>
+<ul>
+<li>解决海量数据的分布式存储过程*<pre><code>* 不适合低延迟的数据访问 
+* 无法高效存储大量小文件
+* 不支持多用户写入集任意修改文件
+* 只允许追加 不允许修改
+</code></pre><h3 id="块：设计大一些-会减小寻址开销-MapReduce以块单位为处理单元"><a href="#块：设计大一些-会减小寻址开销-MapReduce以块单位为处理单元" class="headerlink" title="块：设计大一些 会减小寻址开销 MapReduce以块单位为处理单元"></a>块：设计大一些 会减小寻址开销 MapReduce以块单位为处理单元</h3></li>
+</ul>
+<p>HDFS采用这种抽象的块的概念设计好处：</p>
+<pre><code>* 支持大规模文件存储
+* 简化系统设计
+* 适合数据备份
+</code></pre><h3 id="HDFS两大组件"><a href="#HDFS两大组件" class="headerlink" title="HDFS两大组件"></a>HDFS两大组件</h3><p>NameNode  ———&gt; 整个HDFS集群的管家<br>DataNode  ——-&gt;  存储实际数据</p>
+<p>元数据：<br>        （1）文件是什么<br>        （2）文件被分成多少块<br>        （3）每个块和文件怎么映射的<br>        （4）每个块被存储在哪个服务器上面</p>
+<p>NameNode：FsImage  EditLog<br>            第二名称节点 ：名称节点的冷备份  EditLog不断增大的问题</p>
+<h2 id="HBase"><a href="#HBase" class="headerlink" title="HBase"></a>HBase</h2><pre><code>* 高可靠
+* 高性能
+* 面向列
+* 可伸缩
+</code></pre><p>HBase———&gt; 分布式数据库——&gt;可以用来存储非结构化的松散数据</p>
+<hr>
+<p>为什么要设计HBase这么一个数据库产品？<br>Ans：虽然已经有了HDFS和MapReduce，但是Hadoop主要解决大规模数据离线批量处理Hadoop是没有办法满足大数据实时处理需求的。随着这些年大数据的大规模爆炸式增长，传统关系型数据库的扩展能力非常有限。</p>
+<hr>
+<p>HBase和传统的关系数据库有什么联系和区别？<br>Ans：</p>
+<pre><code>* 数据类型方面，传统的关系数据库用的是非常经典的关系数据模型
+* 数据操作方面，在关系数据库当中定了非常多的数据操作
+* 存储模式方面，关系数据库是基于行模式存储，而对于HBase来讲是基于列存储
+* 在数据索引方面，关系数据库可以直接针对各个不同的列，构建非常复杂的索引
+* 数据维护方面，在关系数据房中做一些数据更新操作的时候，实际上里面旧的值会被新的值覆盖掉
+* 可伸缩性，关系数据库是很难实现水平扩展的，最多可以实现纵向扩展
+</code></pre><hr>
+<p>HBase 是一个稀疏的多维度的排序的映射表<br>按列存储 便于分析事物的某一个特性 可以带来很高的数据压缩率</p>
+<hr>
+<h3 id="HBase-的实现原理"><a href="#HBase-的实现原理" class="headerlink" title="HBase 的实现原理"></a>HBase 的实现原理</h3><h4 id="HBase的功能组件"><a href="#HBase的功能组件" class="headerlink" title="HBase的功能组件"></a>HBase的功能组件</h4><pre><code>* 库函数：一般用于链接每个客户端
+* Master服务器：充当管家作用
+* Region服务器：负责存储不同的Region
+</code></pre><hr>
+<ul>
+<li>一个HBase表被划分成多个Region</li>
+<li>一个Region会分裂成多个新的Region</li>
+<li>现在一个Region的大小最佳配置为1GB到2GB</li>
+<li>Region的实际大小，取决于单台服务器的有效处理能力</li>
+<li>对于同一个Region它是绝对不会被拆分到不同的Region服务器上的</li>
+<li>每一个Region服务器，大概可以存储10到1000个Region</li>
+</ul>
+<hr>
+<p>HBase的三层结构</p>
+<p>ZooKeeper文件—-&gt;ROOT表——-&gt;.META表——&gt;记录用户数据表的region位置信息</p>
+<p>.META表的都放在内存里面</p>
+<hr>
+<p>HBase 性能优化方法 ：时间靠近的数据都存在一起</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2018/10/18/大数据/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-虚拟化" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="虚拟化"><a href="#虚拟化" class="headerlink" title="虚拟化"></a>虚拟化</h1><p>cpu的内部 内核运行在环0 进程运行在环3<br>硬件虚拟化 就是在cpu中虚拟出一个-1环</p>
+<p>进程类别：交互式进程（I/O）<br>           批处理进程（cpu）<br>           实时进程（Real_time）</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2018/09/29/虚拟化/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-linux" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="linux"><a href="#linux" class="headerlink" title="linux"></a>linux</h1><p>计算机操作系统技术<br>    32位只能支持4G的ram<br>    PAE :physical address extension<br>    单进程最多使用3g 留1g给操作系统<br>    内存与cpu的时钟频率不一样 可以加缓存 解决一下<br>    缓存比ram读取速度高 造价也要高<br>    程序的局部性 才可以使用缓存技术<br>    置换策略 是缓存的一种技术 lru mru<br>    程序的局部性：空间局部性 时间局部性<br>    cpu引入缓冲技术 一定程度解决了cpu与ram之间的读写速度的差异<br>    现在又多级缓存技术<br>    一二级缓冲通常是每个核独有的  三级多核是共享的<br>    缓存采用的是静态ram技术 一级缓存通常只有几十k的大小</p>
+<pre><code>直接映射技术 缓存命中率太低 后续采取N路关联技术
+</code></pre><p>cpu写数据的时候的策略：通写策略（Write through）<br>                        会写策略（Write Back） 现在缓存几乎都是回写</p>
+<p>高速IO总线 ：PCIE 通过北桥与cpu链接<br>低速IO总线：PCI 通过南桥连接 硬盘 网卡 usb<br>固态硬盘 是内部并行存储<br>任何一个硬件都有自己的IO port  一片连续端口 系统一加电 每个硬件都向cpu注册IO端口</p>
+<p>当硬件来了信号之后 硬件会通知 cpu IO是用来数据交互的 信号交互使用其他电路<br>硬件向cpu外部的个中断控制器（Interrupt Controller） 发出中断向量 （带地址的中断向量）<br>中断控制器 分上半部 和下半部<br>临界区：有可能发生竞争的地方<br>DMA芯片：（direct memory access）直接内存访问  物理内存的低地址空间16M会用来给DMA预留使用  后面的1M预留给bios使用 DMA使用完后向cpu发起中断 释放总线<br>bios存储在coms中 焊接在主办上面</p>
+<p>为了防止每个程序独占cpu 就出现了monitor 后面发展成了os每次可以加载程序的一部分运行 —&gt;porcess<br>Process:一个独立的运行单位<br>        系统资源；cpu时间；存储空间<br>OS：vm  cpu虚拟：按时间切片 完成cpu的虚拟<br>        cpu里面有一个指令计数器 指向下一个指令<br>        进程切换：保存现场 恢复现场<br>        内存虚拟：内存按空间切片  划分一个个槽 page pageframe<br>                    叶目录 用来翻译从线性地址到物理地址的映射</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2018/09/29/linux/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
   
 
 

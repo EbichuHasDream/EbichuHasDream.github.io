@@ -6,19 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>My First Blog | EbichuMan</title>
+  <title>EbichuMan</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="To EverybodyThis is my First Bolf,This is my first blog, and I will record my study here in the future.">
+  <meta name="description" content="linux计算机操作系统技术    32位只能支持4G的ram    PAE :physical address extension    单进程最多使用3g 留1g给操作系统    内存与cpu的时钟频率不一样 可以加缓存 解决一下    缓存比ram读取速度高 造价也要高    程序的局部性 才可以使用缓存技术    置换策略 是缓存的一种技术 lru mru    程序的局部性：空间局部性">
 <meta property="og:type" content="article">
-<meta property="og:title" content="My First Blog">
-<meta property="og:url" content="http://yoursite.com/2019/03/15/我的第一篇博客/index.html">
+<meta property="og:title" content="EbichuMan">
+<meta property="og:url" content="http://yoursite.com/2018/09/29/linux/index.html">
 <meta property="og:site_name" content="EbichuMan">
-<meta property="og:description" content="To EverybodyThis is my First Bolf,This is my first blog, and I will record my study here in the future.">
+<meta property="og:description" content="linux计算机操作系统技术    32位只能支持4G的ram    PAE :physical address extension    单进程最多使用3g 留1g给操作系统    内存与cpu的时钟频率不一样 可以加缓存 解决一下    缓存比ram读取速度高 造价也要高    程序的局部性 才可以使用缓存技术    置换策略 是缓存的一种技术 lru mru    程序的局部性：空间局部性">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-03-15T06:37:08.319Z">
+<meta property="og:updated_time" content="2018-09-29T08:24:46.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="My First Blog">
-<meta name="twitter:description" content="To EverybodyThis is my First Bolf,This is my first blog, and I will record my study here in the future.">
+<meta name="twitter:title" content="EbichuMan">
+<meta name="twitter:description" content="linux计算机操作系统技术    32位只能支持4G的ram    PAE :physical address extension    单进程最多使用3g 留1g给操作系统    内存与cpu的时钟频率不一样 可以加缓存 解决一下    缓存比ram读取速度高 造价也要高    程序的局部性 才可以使用缓存技术    置换策略 是缓存的一种技术 lru mru    程序的局部性：空间局部性">
   
     <link rel="alternative" href="/atom.xml" title="EbichuMan" type="application/atom+xml">
   
@@ -154,27 +154,17 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-我的第一篇博客" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-linux" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 class="article-title" itemprop="name">
-      My First Blog
-    </h1>
-  
-
-        
-        <a href="/2019/03/15/我的第一篇博客/" class="archive-article-date">
-  	<time datetime="2019-03-15T05:16:33.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-03-15</time>
-</a>
-        
-      </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="To-Everybody"><a href="#To-Everybody" class="headerlink" title="To Everybody"></a>To Everybody</h2><p>This is my First Bolf,This is my first blog, and I will record my study here in the future.</p>
+        <h1 id="linux"><a href="#linux" class="headerlink" title="linux"></a>linux</h1><p>计算机操作系统技术<br>    32位只能支持4G的ram<br>    PAE :physical address extension<br>    单进程最多使用3g 留1g给操作系统<br>    内存与cpu的时钟频率不一样 可以加缓存 解决一下<br>    缓存比ram读取速度高 造价也要高<br>    程序的局部性 才可以使用缓存技术<br>    置换策略 是缓存的一种技术 lru mru<br>    程序的局部性：空间局部性 时间局部性<br>    cpu引入缓冲技术 一定程度解决了cpu与ram之间的读写速度的差异<br>    现在又多级缓存技术<br>    一二级缓冲通常是每个核独有的  三级多核是共享的<br>    缓存采用的是静态ram技术 一级缓存通常只有几十k的大小</p>
+<pre><code>直接映射技术 缓存命中率太低 后续采取N路关联技术
+</code></pre><p>cpu写数据的时候的策略：通写策略（Write through）<br>                        会写策略（Write Back） 现在缓存几乎都是回写</p>
+<p>高速IO总线 ：PCIE 通过北桥与cpu链接<br>低速IO总线：PCI 通过南桥连接 硬盘 网卡 usb<br>固态硬盘 是内部并行存储<br>任何一个硬件都有自己的IO port  一片连续端口 系统一加电 每个硬件都向cpu注册IO端口</p>
+<p>当硬件来了信号之后 硬件会通知 cpu IO是用来数据交互的 信号交互使用其他电路<br>硬件向cpu外部的个中断控制器（Interrupt Controller） 发出中断向量 （带地址的中断向量）<br>中断控制器 分上半部 和下半部<br>临界区：有可能发生竞争的地方<br>DMA芯片：（direct memory access）直接内存访问  物理内存的低地址空间16M会用来给DMA预留使用  后面的1M预留给bios使用 DMA使用完后向cpu发起中断 释放总线<br>bios存储在coms中 焊接在主办上面</p>
+<p>为了防止每个程序独占cpu 就出现了monitor 后面发展成了os每次可以加载程序的一部分运行 —&gt;porcess<br>Process:一个独立的运行单位<br>        系统资源；cpu时间；存储空间<br>OS：vm  cpu虚拟：按时间切片 完成cpu的虚拟<br>        cpu里面有一个指令计数器 指向下一个指令<br>        进程切换：保存现场 恢复现场<br>        内存虚拟：内存按空间切片  划分一个个槽 page pageframe<br>                    叶目录 用来翻译从线性地址到物理地址的映射</p>
 
       
 
@@ -254,7 +244,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/03/15/我的第一篇博客/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2018/09/29/linux/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -268,11 +258,15 @@
   
 <nav id="article-nav">
   
-  
-    <a href="/2018/10/22/MapReduce/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title"></div>
-      <i class="icon-circle-right"></i>
+    <a href="/2018/09/29/虚拟化/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          (no title)
+        
+      </div>
     </a>
+  
   
 </nav>
 
