@@ -6,19 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>EbichuMan</title>
+  <title>虚拟化 | EbichuMan</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="MongoDB简介： * 由C++编写，是一个基于分布式文件存储的开源数据库系统 * 在高负载的情况下，添加更多的节点，可以保证服务器性能 * MongoDB旨在为WEB引用提供可扩展的高性能数据存储解决方案 特点： * 提供了一个面向文档存储操作起来比较简单和容易 * 可以设置任何属性的索引实现更快的排序 * 具有更好的水平可扩展性 * 支持丰富的查询表达式 可查询文档中内嵌的对象及数组 * 课">
+  <meta name="description" content="虚拟化cpu的内部 内核运行在环0 进程运行在环3硬件虚拟化 就是在cpu中虚拟出一个-1环 进程类别：交互式进程（I/O）           批处理进程（cpu）           实时进程（Real_time）">
+<meta name="keywords" content="BigData">
 <meta property="og:type" content="article">
-<meta property="og:title" content="EbichuMan">
-<meta property="og:url" content="http://yoursite.com/2018/10/19/MongoDB/index.html">
+<meta property="og:title" content="虚拟化">
+<meta property="og:url" content="http://yoursite.com/2019/03/13/虚拟化/index.html">
 <meta property="og:site_name" content="EbichuMan">
-<meta property="og:description" content="MongoDB简介： * 由C++编写，是一个基于分布式文件存储的开源数据库系统 * 在高负载的情况下，添加更多的节点，可以保证服务器性能 * MongoDB旨在为WEB引用提供可扩展的高性能数据存储解决方案 特点： * 提供了一个面向文档存储操作起来比较简单和容易 * 可以设置任何属性的索引实现更快的排序 * 具有更好的水平可扩展性 * 支持丰富的查询表达式 可查询文档中内嵌的对象及数组 * 课">
+<meta property="og:description" content="虚拟化cpu的内部 内核运行在环0 进程运行在环3硬件虚拟化 就是在cpu中虚拟出一个-1环 进程类别：交互式进程（I/O）           批处理进程（cpu）           实时进程（Real_time）">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-10-19T13:05:24.000Z">
+<meta property="og:updated_time" content="2019-03-15T09:47:51.606Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="EbichuMan">
-<meta name="twitter:description" content="MongoDB简介： * 由C++编写，是一个基于分布式文件存储的开源数据库系统 * 在高负载的情况下，添加更多的节点，可以保证服务器性能 * MongoDB旨在为WEB引用提供可扩展的高性能数据存储解决方案 特点： * 提供了一个面向文档存储操作起来比较简单和容易 * 可以设置任何属性的索引实现更快的排序 * 具有更好的水平可扩展性 * 支持丰富的查询表达式 可查询文档中内嵌的对象及数组 * 课">
+<meta name="twitter:title" content="虚拟化">
+<meta name="twitter:description" content="虚拟化cpu的内部 内核运行在环0 进程运行在环3硬件虚拟化 就是在cpu中虚拟出一个-1环 进程类别：交互式进程（I/O）           批处理进程（cpu）           实时进程（Real_time）">
   
     <link rel="alternative" href="/atom.xml" title="EbichuMan" type="application/atom+xml">
   
@@ -154,24 +155,29 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-MongoDB" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-虚拟化" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      虚拟化
+    </h1>
+  
+
+        
+        <a href="/2019/03/13/虚拟化/" class="archive-article-date">
+  	<time datetime="2019-03-12T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-03-13</time>
+</a>
+        
+      </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="MongoDB"><a href="#MongoDB" class="headerlink" title="MongoDB"></a>MongoDB</h1><p>简介：</p>
-<pre><code>* 由C++编写，是一个基于分布式文件存储的开源数据库系统
-* 在高负载的情况下，添加更多的节点，可以保证服务器性能
-* MongoDB旨在为WEB引用提供可扩展的高性能数据存储解决方案
-</code></pre><p>特点：</p>
-<pre><code>* 提供了一个面向文档存储操作起来比较简单和容易
-* 可以设置任何属性的索引实现更快的排序
-* 具有更好的水平可扩展性
-* 支持丰富的查询表达式 可查询文档中内嵌的对象及数组
-* 课替换已完成文档某个制定的数据字段
-* MongoDB中的MapReduce主要是用来对数据进行批量处理和聚合操作
-* 安装过程非常简单
-</code></pre>
+        <h2 id="虚拟化"><a href="#虚拟化" class="headerlink" title="虚拟化"></a>虚拟化</h2><p>cpu的内部 内核运行在环0 进程运行在环3<br>硬件虚拟化 就是在cpu中虚拟出一个-1环</p>
+<p>进程类别：交互式进程（I/O）<br>           批处理进程（cpu）<br>           实时进程（Real_time）</p>
+
       
 
       
@@ -200,6 +206,17 @@
     <div class="article-info article-info-index">
       
       
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">BigData</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
       
 
       
@@ -250,7 +267,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2018/10/19/MongoDB/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/03/13/虚拟化/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -264,18 +281,18 @@
   
 <nav id="article-nav">
   
-    <a href="/2018/10/22/MapReduce/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2019/03/13/MongoDB/" id="article-nav-newer" class="article-nav-link-wrap">
       <i class="icon-circle-left"></i>
       <div class="article-nav-title">
         
-          (no title)
+          MongoDB
         
       </div>
     </a>
   
   
-    <a href="/2018/10/19/NOSQL数据库/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title"></div>
+    <a href="/2019/03/13/大数据/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">大数据</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -399,6 +416,10 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
             <input type="checkbox" q-on="click:toggleTag(e)" q-attr="checked:showTags">
           </label>
           <ul class="article-tag-list" q-show="showTags">
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">BigData</a>
+              </li>
             
             <div class="clearfix"></div>
           </ul>

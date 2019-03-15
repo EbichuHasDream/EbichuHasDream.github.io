@@ -6,19 +6,15 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>EbichuMan</title>
+  <title>Tag: BigData | EbichuMan</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="linux计算机操作系统技术    32位只能支持4G的ram    PAE :physical address extension    单进程最多使用3g 留1g给操作系统    内存与cpu的时钟频率不一样 可以加缓存 解决一下    缓存比ram读取速度高 造价也要高    程序的局部性 才可以使用缓存技术    置换策略 是缓存的一种技术 lru mru    程序的局部性：空间局部性">
-<meta property="og:type" content="article">
+  <meta property="og:type" content="website">
 <meta property="og:title" content="EbichuMan">
-<meta property="og:url" content="http://yoursite.com/2018/09/29/linux/index.html">
+<meta property="og:url" content="http://yoursite.com/tags/BigData/index.html">
 <meta property="og:site_name" content="EbichuMan">
-<meta property="og:description" content="linux计算机操作系统技术    32位只能支持4G的ram    PAE :physical address extension    单进程最多使用3g 留1g给操作系统    内存与cpu的时钟频率不一样 可以加缓存 解决一下    缓存比ram读取速度高 造价也要高    程序的局部性 才可以使用缓存技术    置换策略 是缓存的一种技术 lru mru    程序的局部性：空间局部性">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-09-29T08:24:46.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="EbichuMan">
-<meta name="twitter:description" content="linux计算机操作系统技术    32位只能支持4G的ram    PAE :physical address extension    单进程最多使用3g 留1g给操作系统    内存与cpu的时钟频率不一样 可以加缓存 解决一下    缓存比ram读取速度高 造价也要高    程序的局部性 才可以使用缓存技术    置换策略 是缓存的一种技术 lru mru    程序的局部性：空间局部性">
   
     <link rel="alternative" href="/atom.xml" title="EbichuMan" type="application/atom+xml">
   
@@ -154,150 +150,174 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-linux" class="article article-type-post " itemscope itemprop="blogPost">
-  <div class="article-inner">
+            
+  
+  
     
-    <div class="article-entry" itemprop="articleBody">
+    
       
-        <h1 id="linux"><a href="#linux" class="headerlink" title="linux"></a>linux</h1><p>计算机操作系统技术<br>    32位只能支持4G的ram<br>    PAE :physical address extension<br>    单进程最多使用3g 留1g给操作系统<br>    内存与cpu的时钟频率不一样 可以加缓存 解决一下<br>    缓存比ram读取速度高 造价也要高<br>    程序的局部性 才可以使用缓存技术<br>    置换策略 是缓存的一种技术 lru mru<br>    程序的局部性：空间局部性 时间局部性<br>    cpu引入缓冲技术 一定程度解决了cpu与ram之间的读写速度的差异<br>    现在又多级缓存技术<br>    一二级缓冲通常是每个核独有的  三级多核是共享的<br>    缓存采用的是静态ram技术 一级缓存通常只有几十k的大小</p>
-<pre><code>直接映射技术 缓存命中率太低 后续采取N路关联技术
-</code></pre><p>cpu写数据的时候的策略：通写策略（Write through）<br>                        会写策略（Write Back） 现在缓存几乎都是回写</p>
-<p>高速IO总线 ：PCIE 通过北桥与cpu链接<br>低速IO总线：PCI 通过南桥连接 硬盘 网卡 usb<br>固态硬盘 是内部并行存储<br>任何一个硬件都有自己的IO port  一片连续端口 系统一加电 每个硬件都向cpu注册IO端口</p>
-<p>当硬件来了信号之后 硬件会通知 cpu IO是用来数据交互的 信号交互使用其他电路<br>硬件向cpu外部的个中断控制器（Interrupt Controller） 发出中断向量 （带地址的中断向量）<br>中断控制器 分上半部 和下半部<br>临界区：有可能发生竞争的地方<br>DMA芯片：（direct memory access）直接内存访问  物理内存的低地址空间16M会用来给DMA预留使用  后面的1M预留给bios使用 DMA使用完后向cpu发起中断 释放总线<br>bios存储在coms中 焊接在主办上面</p>
-<p>为了防止每个程序独占cpu 就出现了monitor 后面发展成了os每次可以加载程序的一部分运行 —&gt;porcess<br>Process:一个独立的运行单位<br>        系统资源；cpu时间；存储空间<br>OS：vm  cpu虚拟：按时间切片 完成cpu的虚拟<br>        cpu里面有一个指令计数器 指向下一个指令<br>        进程切换：保存现场 恢复现场<br>        内存虚拟：内存按空间切片  划分一个个槽 page pageframe<br>                    叶目录 用来翻译从线性地址到物理地址的映射</p>
-
       
-
-      
-        <div class="page-reward">
-          <a href="javascript:;" class="page-reward-btn tooltip-top">
-            <div class="tooltip tooltip-east">
-            <span class="tooltip-item">
-              赏
-            </span>
-            <span class="tooltip-content">
-              <span class="tooltip-text">
-                <span class="tooltip-inner">
-                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
-                  <div class="reward-box">
-                    
-                    
-                  </div>
-                </span>
-              </span>
-            </span>
-          </div>
-          </a>
+      <section class="archives-wrap">
+        <div class="archive-year-wrap">
+          <a href="/archives/2019" class="archive-year">2019</a>
         </div>
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-
-      
-        
-<div class="share-btn share-icons tooltip-left">
-  <div class="tooltip tooltip-east">
-    <span class="tooltip-item">
-      <a href="javascript:;" class="share-sns share-outer">
-        <i class="icon icon-share"></i>
-      </a>
-    </span>
-    <span class="tooltip-content">
-      <div class="share-wrap">
-        <div class="share-icons">
-          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
-            <i class="icon icon-weibo"></i>
-          </a>
-          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
-            <i class="icon icon-weixin"></i>
-          </a>
-          <a class="qq share-sns" href="javascript:;" data-type="qq">
-            <i class="icon icon-qq"></i>
-          </a>
-          <a class="douban share-sns" href="javascript:;" data-type="douban">
-            <i class="icon icon-douban"></i>
-          </a>
-          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
-            <i class="icon icon-qzone"></i>
-          </a>
-          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
-            <i class="icon icon-facebook"></i>
-          </a>
-          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
-            <i class="icon icon-twitter"></i>
-          </a>
-          <a class="google share-sns" href="javascript:;" data-type="google">
-            <i class="icon icon-google"></i>
-          </a>
+        <div class="archives">
+    
+    <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      	<div class="article-meta">
+	      	<a href="/2019/03/15/MapReduce/" class="archive-article-date">
+  	<time datetime="2019-03-15T08:34:41.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-03-15</time>
+</a>
         </div>
-      </div>
-    </span>
-  </div>
-</div>
+    	 
+  
+    <h1 itemprop="name">
+      <a class="archive-article-title" href="/2019/03/15/MapReduce/">MapReduce</a>
+    </h1>
+  
 
-<div class="page-modal wx-share js-wx-box">
-    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
-    <p>扫一扫，分享到微信</p>
-    <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2018/09/29/linux/" alt="微信分享二维码">
-    </div>
-</div>
+        <div class="article-info info-on-right">
+          
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">BigData</a>
+        		</li>
+      		
+		</ul>
+	</div>
 
-<div class="mask js-mask"></div>
-      
-      <div class="clearfix"></div>
-    </div>
+          
+
+        </div>
+        <div class="clearfix"></div>
+    </header>
   </div>
 </article>
-
   
-<nav id="article-nav">
-  
-    <a href="/2018/09/29/虚拟化/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          (no title)
-        
-      </div>
-    </a>
-  
-  
-</nav>
-
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
+    
+    
+    <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      	<div class="article-meta">
+	      	<a href="/2019/03/13/MongoDB/" class="archive-article-date">
+  	<time datetime="2019-03-12T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-03-13</time>
+</a>
         </div>
-        
-        
-    </div>
-</aside>
-
-
-
+    	 
   
-  
+    <h1 itemprop="name">
+      <a class="archive-article-title" href="/2019/03/13/MongoDB/">MongoDB</a>
+    </h1>
   
 
+        <div class="article-info info-on-right">
+          
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">BigData</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+          
+
+        </div>
+        <div class="clearfix"></div>
+    </header>
+  </div>
+</article>
+  
+    
+    
+    <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      	<div class="article-meta">
+	      	<a href="/2019/03/13/虚拟化/" class="archive-article-date">
+  	<time datetime="2019-03-12T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-03-13</time>
+</a>
+        </div>
+    	 
+  
+    <h1 itemprop="name">
+      <a class="archive-article-title" href="/2019/03/13/虚拟化/">虚拟化</a>
+    </h1>
   
 
+        <div class="article-info info-on-right">
+          
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">BigData</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+          
+
+        </div>
+        <div class="clearfix"></div>
+    </header>
+  </div>
+</article>
+  
+    
+    
+    <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      	<div class="article-meta">
+	      	<a href="/2019/03/13/大数据/" class="archive-article-date">
+  	<time datetime="2019-03-12T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-03-13</time>
+</a>
+        </div>
+    	 
+  
+    <h1 itemprop="name">
+      <a class="archive-article-title" href="/2019/03/13/大数据/">大数据</a>
+    </h1>
   
 
+        <div class="article-info info-on-right">
+          
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">BigData</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+          
+
+        </div>
+        <div class="clearfix"></div>
+    </header>
+  </div>
+</article>
   
+  
+    </div></section>
+  
+
+    
 
 
           </div>
@@ -320,9 +340,9 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: true,
+		isPost: false,
 		isArchive: false,
-		isTag: false,
+		isTag: true,
 		isCategory: false,
 		open_in_new: false,
 		toc_hide_index: true,
@@ -388,6 +408,10 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
             <input type="checkbox" q-on="click:toggleTag(e)" q-attr="checked:showTags">
           </label>
           <ul class="article-tag-list" q-show="showTags">
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">BigData</a>
+              </li>
             
             <div class="clearfix"></div>
           </ul>
